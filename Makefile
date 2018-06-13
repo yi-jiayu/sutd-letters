@@ -6,4 +6,4 @@ all: letters
 letters: $(targets)
 
 rendered/%.png: letters/%.pbm
-	convert $< -scale 4000% $@
+	convert $< -scale 4000% -transparent white $@
